@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+ENV/
+
+# Secrets / env files
+.env
+.env.local
+.env.*.local
+backend/.env
+
+# Database (ephemeral on Render, re-seeded on startup)
+*.db
+*.sqlite3
+
+# Node / Frontend
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Uploaded images (ephemeral on Render)
+uploads/
+
+# System / Logs
+.DS_Store
+Thumbs.db
+*.log
