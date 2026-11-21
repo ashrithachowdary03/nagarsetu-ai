@@ -24,6 +24,7 @@ class Settings(BaseSettings):
     UPLOAD_DIR: str = "uploads"
     SQLITE_DB_PATH: str = "nagarsetu.db"
     FRONTEND_URL: str = "http://localhost:5173"
+    BACKEND_URL: str = "http://localhost:8000"
 
     class Config:
         env_file = ".env"

@@ -86,7 +86,7 @@ async def submit_complaint(
             )
         with open(saved_image_path, "wb") as f:
             f.write(content)
-        saved_image_url = f"/uploads/{file_name}"
+        saved_image_url = f"{settings.BACKEND_URL}/uploads/{file_name}"
 
     # Perform AI Analysis via Groq
     ai_result = await analyse_civic_complaint(
